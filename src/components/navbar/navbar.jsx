@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink} from 'react-router-dom'
 import './navbar.css'
 import { useContext } from 'react';
 import { GlobalContext } from '../../context/context';
@@ -6,7 +6,6 @@ import { GlobalContext } from '../../context/context';
 export default function Navbar(){
     
     const {searchParam, setSearchParam, hSubmit} = useContext(GlobalContext);
-   
 
     return(
         <nav className='nav-flex-container'>
@@ -15,7 +14,7 @@ export default function Navbar(){
             </h2>
             <form onSubmit={hSubmit}>
                 <input type='text' name='search' placeholder='재료명을 입력하세요' className='nav-search-input' 
-                value={searchParam} onChange={(e)=>{setSearchParam(e.target.value)}}/>
+                value={searchParam} onChange={(e)=>setSearchParam(e.target.value)}/>
             </form>
             <ul className='nav-link-ul'>
                 <li>

@@ -49,7 +49,7 @@ export default function Details(){
                         {/* 해당 아이디가 favoritesList에 없으면 '즐겨찾기 추가' 
                             있으면 '즐겨찾기에서 제거' */
                             favoritesList && favoritesList.length > 0 && favoritesList.findIndex(item=>item.id === 
-                                foodDetailData.recipe?.id) === -1 ? '즐겨찾기에 추가' : '즐겨찾기에 제거'
+                                foodDetailData.recipe?.id) !== -1 ? '즐겨찾기에 제거' : '즐겨찾기에 추가'
                             }
                     </button>
                 </div>

@@ -51,7 +51,6 @@ export default function GlobalState({children}){
 
         // 새로 만든 배열을 state에 엎어친다 (한개의 값만 수정하면 화면이 안바뀌니까 배열째로 엎어침)
         setFavoritesList(copyFavoritesList);
-        
     }
 
     return(
